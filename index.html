@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 30px 0 30px;
+        }
+
+        .name {
+            font-size: 40px;
+            font-weight: 500;
+            text-shadow: 1px 1px 4px black;
+        }
+
+        .menu button {
+            background-color: blue;
+            color: white;
+            font-size: 16px;
+            letter-spacing: 2px;
+            cursor: pointer;
+            height: 40px;
+            padding: 5px 10px 5px 10px;
+            border-radius: 5px;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="name">Rohith Reddy</div>
+        <div class="menu">
+            <button onclick="resumeRedirect()">Resume</button>
+        </div>
+    </div>
+</body>
+<script>
+    function resumeRedirect() {
+        window.open('https://firebasestorage.googleapis.com/v0/b/educationforjobs-storage.appspot.com/o/resumes%2Fresume-latest.pdf?alt=media&token=b03f6ff0-6f6c-4bbd-ba9b-93530288332c', "_blank")
+    }
+</script>
+
+</html>
